@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/e5a5695054.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="icon" href="favicon.ico" />
+
+  <title>Création</title>
+</head>
+
+<body>
+  <a href="#principal" class="visible-hidden">Vers le contenu principal</a>
+  <header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="personnageDefault.html">Personnages Défaut</a></li>
+        <li class="breadcrumb-item"><a href="personnageCree.html">Personnages</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Création</li>
+      </ol>
+    </nav>
+    <h1 class="sr-only">Donjons et Dragons</h1>
+    <div class="flex-cent">
+      <img src="../img/D&D.png" alt="image du nom de Dongons et Dragons" />
+    </div>
+  </header>
+
+  <main>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partager</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal"
+            data-target="#modalRecherche"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="modalRecherche" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Information!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>La recherche n’est pas encore fonctionnelle.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menu-->
+        <div class="col-sm-3">
+          <div class="mainNav">
+            <div class="navPrincipal">
+              <nav class="nav flex-column">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Création</a>
+                <a class="nav-link nav-link-animation" href="personnageCree.html">Personnages</a>
+                <a class="nav-link nav-link-animation" href="personnageDefault.html">Par Défaut</a>
+                <a class="nav-link nav-link-animation" href="../index.html">Accueil</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="principal">
+          <form class="row flex-cent" method="POST" action="mailto:antoinebedard@edu.cegepgarneau.ca" enctype="text/plain">
+            <fieldset class="col-lg-6">
+              <legend>Caractéristiques du personnage</legend>
+
+              <section id="typeArmes">
+                <div>
+                  <label for="Arme_Choisi">Arme du personnage</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Arme_Choisi" id="inlineRadio1" value="epee" checked="checked">
+                  <label class="form-check-label" for="inlineRadio1">Épée</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Arme_Choisi" id="inlineRadio2" value="arc">
+                  <label class="form-check-label" for="inlineRadio2">Arc</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Arme_Choisi" id="inlineRadio3"
+                    value="baton magique">
+                  <label class="form-check-label" for="inlineRadio3">Bâton magique</label>
+                </div>
+              </section>
+
+              <label for="typePerso">Type de personnage</label>
+              <div>
+                <select name="typePerso" id="typePerso" class="form-control">
+                  <option selected disabled value="">Choisir..</option>
+                  <optgroup label="Hummains">
+                    <option value="chevalier" aria-label="chevalier">Chevalier</option>
+                    <option value="sorcier" aria-label="sorcier">Sorcier</option>
+                  </optgroup>
+                  <optgroup label="Monstres">
+                    <option value="orc" aria-label="orc">Orc</option>
+                    <option value="goblin" aria-label="goblin">Goblin</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <label for="nom">Noms du personnage</label>
+              <div>
+                <input id="nom" name="nom" class="form-control is-invalid" type="text" placeholder="Saisir un noms" required="required">
+              </div>
+
+              <label for="descPerso">Description du personnage</label>
+              <div>
+                <textarea class="form-control" name="descPerso" id="descPerso" placeholder="Saisir une description" rows="7" cols="40"></textarea>
+              </div>
+
+              <label for="sexe">Sexe du personnage</label>
+              <div>
+                <input name="sexe" list="sexe" aria-label="Sexe du personnage">
+                <datalist class="" name="sexe" id="sexe">
+                  <option value="Homme" aria-label="sexe homme"></option>
+                  <option value="Femme" aria-label="sexe femme"></option>
+                  <option value="Autre" aria-label="sexe autre"></option>
+                </datalist>
+              </div>
+
+              <label for="age" class="flex-cent">Âge du personnage</label>
+              <div class="row">
+                <p class="col-1">1</p>
+                <input type="range" name="age" class="custom-range col-10" id="age" min="1" max="100" step="1" value="1" aria-label="range pour choisir l'age du personnage">
+                <p class="col-1">100</p>
+              </div>
+
+            </fieldset>
+            <fieldset class="col-lg-6">
+              <legend>Création du personnage</legend>
+
+              <figur>
+                <img src="../img/personnages/sorcier2.png" alt="image sorcier" />
+                <figcaption>Ceci est votre personnage</figcaption>
+              </figur>
+
+              <div>
+                <button type="submit" class="btn btn-primary mb-2" aria-label="bouton envoyer">Envoyer</button>
+                <button type="reset" class="btn btn-primary mb-2" aria-label="bouton annuler">Annuler</button>
+                <button type="button" class="btn btn-outline-primary" aria-label="bouton aléatoire"><i class="fas fa-dice-d20"></i></button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Contactez-nous</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a href="mailto:antoinebedard@edu.cegepgarneau.ca">© 2020 antoinebedard@edu.cegepgarneau.ca</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Conditions d’utilisation</a>
+        </div>
+      </div>
+      <div class="flex-cent">
+        <blockquote class="blockquote text-right">
+          <p class="mb-0">Rappelez-vous comment avant, je parlais de Donjons et Dragons? Vivement, a déclaré Jace.
+            C'était une période sombre.</p>
+          <footer class="blockquote-footer">Cassandra Clare, <cite title="City of Heavenly Fire">City of Heavenly
+              Fire</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

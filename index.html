@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/e5a5695054.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" />
+  <title>Accueil</title>
+</head>
+
+<body>
+  <a href="#principal" class="visible-hidden">Vers le contenu principal</a>
+  <header>
+    <h1 class="sr-only">Donjons et Dragons</h1>
+    <div class="flex-cent">
+      <img src="img/D&D.png" alt="image du nom de Dongons et Dragons" />
+    </div>
+  </header>
+
+  <main>
+    <!-- Modal -->
+    <div class="modal fade" id="modalRecherche" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Information!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            La recherche n’est pas encore fonctionnelle.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" name="fermer">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--navigation-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partager</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal"
+            data-target="#modalRecherche" name="recherche"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menu-->
+        <div class="col-sm-3">
+          <div class="mainNav">
+            <div class="navPrincipal">
+              <nav class="nav flex-column">
+                <a class="nav-link nav-link-animation" href="pages/creation.html">Création</a>
+                <a class="nav-link nav-link-animation" href="pages/personnageCree.html">Personnages</a>
+                <a class="nav-link nav-link-animation" href="pages/personnageDefault.html">Par Défaut</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Accueil</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <!--carouselle-->
+            <div class="col-md-6" id="principal">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/carousel2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carousel3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">suivant</span>
+                </a>
+              </div>
+            </div>
+            <!--texte-->
+            <div class="col-md-6">
+              <p>
+                Donjons et Dragons, souvent abrégé en D&D, DnD ou AD&D, est l'un des tout premiers jeux de rôle sur
+                table de genre médiéval-fantastique. Le jeu a été créé dans les années 1970 par les Américains Gary
+                Gygax et Dave Arneson.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Contactez-nous</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a href="mailto:antoinebedard@edu.cegepgarneau.ca">© 2020 antoinebedard@edu.cegepgarneau.ca</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Conditions d’utilisation</a>
+        </div>
+      </div>
+      <div class="flex-cent">
+        <blockquote class="blockquote text-right">
+          <p class="mb-0">Rappelez-vous comment avant, je parlais de Donjons et Dragons? Vivement, a déclaré Jace.
+            C'était une période sombre.</p>
+          <footer class="blockquote-footer">Cassandra Clare, <cite title="City of Heavenly Fire">City of Heavenly
+              Fire</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

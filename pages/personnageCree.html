@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/e5a5695054.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico" />
+
+  <title>Perssonages</title>
+</head>
+
+<body>
+  <a href="#principal" class="visible-hidden">Vers le contenu principal</a>
+  <header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="personnageDefault.html">Personnages Défaut</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Personnages</li>
+      </ol>
+    </nav>
+    <h1 class="sr-only">Donjons et Dragons</h1>
+    <div class="flex-cent">
+      <img src="../img/D&D.png" alt="image du nom de Dongons et Dragons" />
+    </div>
+  </header>
+
+  <main>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partager</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connexion</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+          <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal"
+            data-target="#modalRecherche"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="modalRecherche" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Information!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>La recherche n’est pas encore fonctionnelle.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menu-->
+        <div class="col-sm-2">
+          <div class="mainNav">
+            <div class="navPrincipal">
+              <nav class="nav flex-column">
+                <a class="nav-link nav-link-animation" href="creation.html">Création</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Personnages</a>
+                <a class="nav-link nav-link-animation" href="personnageDefault.html">Par Défaut</a>
+                <a class="nav-link nav-link-animation" href="../index.html">Accueil</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5" id="principal">
+          <div class="row flex-cent">
+            <div id="card1" class="card col-sm-6 position-relative minheicard" style="width: 16rem;">
+              <img src="../img/personnages/sorcier.png" class="card-img-top" alt="sorcier">
+              <div class="card-body">
+                <h5 class="card-title">Justin le Sorcier</h5>
+                <p class="card-text">Justin le sorcier est un magicien qui a le talent de vous soigner, il peut être
+                  très utile dans vos rangs. Faites tout de même attention à lui.</p>
+              </div>
+              <a class="stretched-link" href="#"></a>
+            </div>
+            <div id="card2" class="card col-sm-6 position-relative minheicard" style="width: 16rem;">
+              <img src="../img/personnages/chevalier.png" class="card-img-top" alt="Chevalier">
+              <div class="card-body">
+                <h5 class="card-title">Antoine le Chevalier</h5>
+                <p class="card-text">Antoine le chevalier est un combattant hors pairs, il remporte chacun de ses
+                  combats.</p>
+              </div>
+              <a class="stretched-link" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="row flex-cent">
+            <div id="card3" class="card col-sm-6 position-relative minheicard" style="width: 16rem;">
+              <img src="../img/personnages/goblin.png" class="card-img-top" alt="goblin">
+              <div class="card-body">
+                <h5 class="card-title">Anthony le Goblin</h5>
+                <p class="card-text">Anthony le gobelin il est agile, rapide et petit, avec c’est grande oreille il
+                  entend tout. Attention! Surveiller votre sac, il est le meilleur pickpocket.</p>
+              </div>
+              <a class="stretched-link" href="#"></a>
+            </div>
+
+            <div id="card4" class="card col-sm-6 position-relative minheicard" style="width: 16rem;">
+              <img src="../img/personnages/orc.png" class="card-img-top" alt="orc">
+              <div class="card-body">
+                <h5 class="card-title">Yanick l'Orc</h5>
+                <p class="card-text">Yanick l’orc est très costaud, sont repas préférer est le Linux et son point faible
+                  est le Windows.</p>
+              </div>
+              <a class="stretched-link" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Contactez-nous</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a href="mailto:antoinebedard@edu.cegepgarneau.ca">© 2020 antoinebedard@edu.cegepgarneau.ca</a>
+        </div>
+        <div class="col-sm-4 flex-cent">
+          <a class="adisabled" href="#">Conditions d’utilisation</a>
+        </div>
+      </div>
+      <div class="flex-cent">
+        <blockquote class="blockquote text-right">
+          <p class="mb-0">Rappelez-vous comment avant, je parlais de Donjons et Dragons? Vivement, a déclaré Jace.
+            C'était une période sombre.</p>
+          <footer class="blockquote-footer">Cassandra Clare, <cite title="City of Heavenly Fire">City of Heavenly
+              Fire</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

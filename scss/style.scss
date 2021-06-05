@@ -1,0 +1,107 @@
+$enable-responsive-font-sizes: true;
+$primary: rgb(241, 9, 9);
+$success: rgb(241, 9, 9);
+
+
+.nav-link-animation:hover{
+    animation: nav-link-animation 1s;
+}
+@keyframes nav-link-animation{
+    0%{
+        transform: scale(1);
+        transform: skew(0deg, 0deg);
+    }
+    100% {
+        transform: scale(1.09);
+        transform: skew(4deg, 4deg);
+    }
+}
+.cacher{
+    display: none;
+}
+.flex-cent{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: #343a40;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+        color: rgb(211, 211, 211);
+        font-size: 16.5px;
+    }
+    p{
+        color: white;
+    } 
+}
+.img_aleatoire{
+    width: 18%;
+}
+.txtCent{
+    text-align: center;
+}
+.minheicard{
+    min-height: 510px;
+}
+
+@keyframes card-animation{
+    
+    from {opacity: 0; transform : skew(20deg, 10deg);}
+    to {opacity: 1; transform : skew(0deg, 0deg);}
+}
+#card1{
+    animation-name: card-animation;
+    animation-duration: 2s;
+}
+#card2{
+    animation-name: card-animation;
+    animation-duration: 6s;
+}
+#card3{
+    animation-name: card-animation;
+    animation-duration: 10s;
+}
+#card4{
+    animation-name: card-animation;
+    animation-duration: 10s;
+}
+#card1:hover{
+    transform: scale(1.05);
+}
+#card2:hover{
+    transform: scale(1.05);
+}
+#card3:hover{
+    transform: scale(1.05);
+}
+#card4:hover{
+    transform: scale(1.05);
+}
+
+.adisabled{
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+.visible-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.visible-hidden:focus {
+    clip: auto;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
